@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC2 Bastion Host Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background: #232f3e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #232f3e;
+        }
+        .diagram {
+            text-align: center;
+            font-family: monospace;
+            background: #eef2f7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #232f3e;
+            color: white;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff9900;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🔐 EC2 Bastion Host (Jump Server) Project</h1>
+    <p>Securely connecting private EC2 instances using SSH</p>
+</header>
+
+<section>
+    <h2>📌 Project Overview</h2>
+    <p>
+        This project demonstrates how to securely connect to a private EC2 instance 
+        using a Bastion Host (Jump Server). The private server is not exposed to the internet,
+        improving security in cloud environments.
+    </p>
+</section>
+
+<section>
+    <h2>🧱 Architecture Diagram</h2>
+    <div class="diagram">
+        Internet<br>
+        &nbsp;&nbsp;↓<br>
+        [ Bastion Host (Public EC2) ]<br>
+        &nbsp;&nbsp;↓ SSH<br>
+        [ Private EC2 (No Public IP) ]
+    </div>
+</section>
+
+<section>
+    <h2>⚙️ Steps Performed</h2>
+    <ul>
+        <li>Launched two EC2 instances (Public & Private)</li>
+        <li>Configured Security Groups</li>
+        <li>Connected to Bastion Host via SSH</li>
+        <li>Accessed Private EC2 through Bastion Host</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🔐 Security Benefits</h2>
+    <ul>
+        <li>No direct public access to private server</li>
+        <li>Controlled SSH access</li>
+        <li>Improved infrastructure security</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🚀 Deployment</h2>
+    <p>This static website can be hosted on:</p>
+    <ul>
+        <li>AWS S3 (Static Hosting)</li>
+        <li>Nginx Server on EC2</li>
+        <li>AWS Amplify</li>
+    </ul>
+    <a href="#" class="btn">View Project</a>
+</section>
+
+<footer>
+    <p>© 2026 EC2 Bastion Host Project | Created by You</p>
+</footer>
+
+</body>
+</html>
