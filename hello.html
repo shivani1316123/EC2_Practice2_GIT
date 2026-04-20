@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #232f3e, #ff9900);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0,0,0,0.4);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ff9900;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #e68a00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>👋 Hello, Welcome!</h1>
+    <p>Your EC2 & Cloud Project is running successfully 🚀</p>
+    <button class="btn" onclick="showMessage()">Click Me</button>
+</div>
+
+<script>
+    function showMessage() {
+        alert("🎉 Your website is working perfectly!");
+    }
+</script>
+
+</body>
+</html>
